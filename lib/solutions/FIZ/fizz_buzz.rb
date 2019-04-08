@@ -38,9 +38,4 @@ class FizzBuzz
   def is_fake(number)
     (number % 2) > 0 && is_deluxe(number)
   end
-
 end
-
-
-
-
