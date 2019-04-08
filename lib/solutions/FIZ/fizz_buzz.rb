@@ -22,11 +22,11 @@ class FizzBuzz
   end
 
   def number_to_array(number)
-    array = number.to_s.split('')
-    return array
+    return number.to_s.split('')
   end
 
 end
+
 
 
 
