@@ -39,5 +39,10 @@ class ClientTest < Minitest::Test
     assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(22)
     assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(1111)
   end
+
+  def test_fake_deluxe
+    assert_equal 'fake deluxe', FizzBuzz.new.fizz_buzz(11)
+  end
 end
+
 
