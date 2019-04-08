@@ -2,29 +2,14 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    case number
-    when number % 15 == 0
-      return "fizz buzz"
-    when number % 3 == 0
-      return "fizz"
-    when number % 5 == 0
-      return "buzz"
-    else
-      return number
-    end
-
-    # if number % 15 == 0
-    #   "fizz buzz"
-    # elsif number % 3 == 0
-    #   "fizz"
-    # elsif number % 5 == 0
-    #   "buzz"
-    # else
-    #   number
-    # end
+    return "fizz buzz" if number % 15 == 0
+    return "fizz" if number % 3 == 0
+    return "buzz" if number % 5 == 0
+    return number
   end
 
 end
+
 
 
 
