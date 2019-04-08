@@ -2,7 +2,7 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    return 'fizz buzz' if (number % 15).zero?
+    return 'fizz buzz' if (is_fizz(number) == true) && (is_buzz(number) == true)
     return 'fizz' if is_fizz(number)
     return 'buzz' if is_buzz(number)
     number.to_s
@@ -17,6 +17,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
