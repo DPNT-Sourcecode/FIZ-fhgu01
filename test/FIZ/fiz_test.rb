@@ -33,7 +33,10 @@ class ClientTest < Minitest::Test
   def test_deluxe
     assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33)
     assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55)
+    assert_equal 'fizz buzz deluxe', FizzBuzz.new.fizz_buzz(555)
+    # add test to check doesn't deluxe for number < 10
   end
 end
+
 
 
