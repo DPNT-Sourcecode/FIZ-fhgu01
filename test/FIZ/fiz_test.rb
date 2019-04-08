@@ -13,6 +13,8 @@ class ClientTest < Minitest::Test
 
   def test_fizz_number
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(3)
+    assert_equal 'fizz', FizzBuzz.new.fizz_buzz(13)
+    assert_equal 'fizz', FizzBuzz.new.fizz_buzz(34)
   end
 
   def test_buzz_number
@@ -23,3 +25,4 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(15)
   end
 end
+
