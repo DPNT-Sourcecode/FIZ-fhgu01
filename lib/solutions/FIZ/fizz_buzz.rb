@@ -2,12 +2,13 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    return ('fizz buzz' + add_deluxe(number)) if (is_fizz(number) && is_buzz(number))
-    return ('fizz' + ' fake' + add_deluxe(number)) if is_fizz(number) && is_fake(number)
-    return ('fizz' + add_deluxe(number)) if is_fizz(number)
-    return ('buzz' + add_deluxe(number)) if is_buzz(number)
-    return ('fake' + add_deluxe(number)) if is_fake(number) && is_deluxe(number)
-    is_deluxe(number) ? 'deluxe' : number.to_s
+    string_array = []
+    string_array << 'fizz' if is_fizz(number)
+    string_array << 'buzz' if is_buzz(number)
+    string_array << 'fake' if is_fake(number)
+    string_array << 'deluxe' if is_deluxe(number)
+    string_array << number.to_s if string_array.empty?
+    return string_array.join(' ')
   end
 
   def is_fizz(number)
@@ -16,11 +17,6 @@ class FizzBuzz
 
   def is_buzz(number)
     return ((number % 5).zero? || number_to_array(number).include?('5'))
-  end
-
-  def add_deluxe(number)
-    return ' deluxe' if is_deluxe(number)
-    ''
   end
 
   def is_deluxe(number)
@@ -36,5 +32,6 @@ class FizzBuzz
   end
 
 end
+
 
 

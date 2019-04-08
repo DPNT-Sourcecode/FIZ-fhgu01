@@ -31,9 +31,9 @@ class ClientTest < Minitest::Test
   end
 
   def test_deluxe
-    # assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33)
-    # assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55)
-    # assert_equal 'fizz buzz deluxe', FizzBuzz.new.fizz_buzz(555)
+    assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33)
+    assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55)
+    assert_equal 'fizz buzz deluxe', FizzBuzz.new.fizz_buzz(555)
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(6)
     assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(22)
   end
@@ -46,9 +46,10 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz fake deluxe', FizzBuzz.new.fizz_buzz(33)
     assert_equal 'fizz fake deluxe', FizzBuzz.new.fizz_buzz(333)
     assert_equal 'fizz fake deluxe', FizzBuzz.new.fizz_buzz(777)
-    # assert_equal 'buzz fake deluxe', FizzBuzz.new.fizz_buzz(55)
-    # assert_equal 'fizz buzz fake deluxe', FizzBuzz.new.fizz_buzz(555)
+    assert_equal 'buzz fake deluxe', FizzBuzz.new.fizz_buzz(55)
+    assert_equal 'fizz buzz fake deluxe', FizzBuzz.new.fizz_buzz(555)
   end
 end
+
 
 
