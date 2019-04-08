@@ -2,7 +2,7 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    return ('fizz buzz' + add_deluxe(number)) if (is_fizz(number) == true) && (is_buzz(number) == true)
+    return ('fizz buzz' + add_deluxe(number)) if (is_fizz(number) && is_buzz(number))
     return ('fizz' + add_deluxe(number)) if is_fizz(number)
     return ('buzz' + add_deluxe(number)) if is_buzz(number)
     number.to_s
@@ -22,6 +22,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
