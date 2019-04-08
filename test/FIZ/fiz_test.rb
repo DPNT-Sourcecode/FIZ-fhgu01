@@ -19,5 +19,10 @@ class ClientTest < Minitest::Test
     assert_equal "buzz", FizzBuzz.new.fizz_buzz(5)
   end
 
+  def test_fizzbuzz_number
+    assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(15)
+  end
+
 end
+
 
