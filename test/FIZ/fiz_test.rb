@@ -44,7 +44,3 @@ class ClientTest < Minitest::Test
     assert_equal 'fake deluxe', FizzBuzz.new.fizz_buzz(77)
   end
 end
-
-
-
-
