@@ -5,8 +5,8 @@ class FizzBuzz
     return ('fizz buzz' + add_deluxe(number)) if (is_fizz(number) && is_buzz(number))
     return ('fizz' + add_deluxe(number)) if is_fizz(number)
     return ('buzz' + add_deluxe(number)) if is_buzz(number)
-    return 'fake' + add_deluxe(number) if is_fake(number)
-    test_deluxe(number) ? add_fake(number) + 'deluxe' : number.to_s
+    return ('fake' + add_deluxe(number)) if is_fake(number) && is_deluxe(number)
+    is_deluxe(number) ? 'deluxe' : number.to_s
   end
 
   def is_fizz(number)
@@ -18,7 +18,7 @@ class FizzBuzz
   end
 
   def add_deluxe(number)
-    return ' deluxe' if test_deluxe(number)
+    return ' deluxe' if is_deluxe(number)
     ''
   end
 
@@ -35,3 +35,4 @@ class FizzBuzz
   end
 
 end
+
