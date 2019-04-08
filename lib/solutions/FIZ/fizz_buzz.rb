@@ -3,7 +3,7 @@ class FizzBuzz
 
   def fizz_buzz(number)
     return 'fizz buzz' if (is_fizz(number) == true) && (is_buzz(number) == true)
-    return 'fizz' if is_fizz(number)
+    return ('fizz' + add_deluxe(number)) if is_fizz(number)
     return 'buzz' if is_buzz(number)
     number.to_s
   end
@@ -16,4 +16,9 @@ class FizzBuzz
     return ((number % 5).zero? || number.to_s.split('').include?('5'))
   end
 
+  def add_deluxe(number)
+    return ' deluxe' if (number > 10) && (number.to_s.split('').uniq.count <= 1)
+  end
+
 end
+
