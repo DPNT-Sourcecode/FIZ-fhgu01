@@ -22,7 +22,7 @@ class FizzBuzz
   def is_deluxe(number)
     # old rules don't apply!
     # (number > 10) && (number_to_array(number).uniq.count <= 1)
-    (number % 3).zero? && number_to_array(number).include?('3')
+    ((number % 3).zero? && number_to_array(number).include?('3')) || ((number % 5).zero? && number_to_array(number).include?('5'))
   end
 
   def number_to_array(number)
@@ -34,5 +34,6 @@ class FizzBuzz
   end
 
 end
+
 
 
